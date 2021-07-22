@@ -87,6 +87,16 @@ div.transparentbox {
           float: left;
           margin-right: 0px;
       }
+      .page-preview-body {
+          height: calc(100% - 70px);
+          overflow: hidden;
+          text-align: center;
+      }
+      .page-preview-body iframe {
+          border: none;
+          display: inline-block;
+          height: 100%;
+      }
       @media only screen and (orientation: portrait) {
         body {
             height: 100%;
@@ -107,16 +117,19 @@ div.transparentbox {
         	padding: 0px;
         	margin: auto;
         }
-      }
-      .page-preview-body {
-          height: calc(100% - 70px);
-          overflow: hidden;
-          text-align: center;
-      }
-      .page-preview-body iframe {
-          border: none;
-          display: inline-block;
-          height: 100%;
+        .page-preview-body {
+            height: calc(100% - 70px);
+            width: 100%;
+            overflow: hidden;
+            text-align: center;
+        }
+        .page-preview-body iframe {
+            border: none;
+            display: inline-block;
+            margin-bottom: 10px;
+            height: 100%;
+            width: 100%;
+        }
       }
   </style>
 </head>
@@ -135,7 +148,7 @@ div.transparentbox {
         <a class="hidden-sm hidden-xs" href="https://www.linkedin.com/in/chaseleif/" id="LinkedIn" data-preview-size="1040px"><img alt="LinkedIn" src="images/LI-In-Bug.png">
         <figcaption>LinkedIn</figcaption>
         </a>
-        <a style="position:absolute;top:0px;left:10px;" href="index.html"><img alt="Computer Science" src="images/CSedico.png">
+        <a class="close" href="index.html"><img alt="Computer Science" src="images/CSedico.png">
         <figcaption>Main page</figcaption>
         </a>
     </div>

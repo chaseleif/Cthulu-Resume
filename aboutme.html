@@ -87,6 +87,16 @@ div.transparentbox {
           float: left;
           margin-right: 0px;
       }
+      .page-preview-body {
+          height: calc(100% - 70px);
+          overflow: hidden;
+          text-align: center;
+      }
+      .page-preview-body iframe {
+          border: none;
+          display: inline-block;
+          height: 100%;
+      }
       @media only screen and (orientation: portrait) {
         body {
             height: 100%;
@@ -107,16 +117,19 @@ div.transparentbox {
         	padding: 0px;
         	margin: auto;
         }
-      }
-      .page-preview-body {
-          height: calc(100% - 70px);
-          overflow: hidden;
-          text-align: center;
-      }
-      .page-preview-body iframe {
-          border: none;
-          display: inline-block;
-          height: 100%;
+        .page-preview-body {
+            height: calc(100% - 70px);
+            width: 100%;
+            overflow: hidden;
+            text-align: center;
+        }
+        .page-preview-body iframe {
+            border: none;
+            display: inline-block;
+            margin-bottom: 10px;
+            height: 100%;
+            width: 100%;
+        }
       }
   </style>
 </head>
