@@ -30,10 +30,10 @@ figcaption {
 <!-- <div class="image"> -->
 <div class="transparentbox">
 <head> 
+    <meta charset="utf-8" />
     <title>Chase Phelps</title>
-    <meta name="Keywords">
-    <meta name="Description">
-<meta charset="utf-8" />
+    <meta name="description" content="Homepage">
+    <meta name="author" content="Chase Phelps">
     <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,user-scalable=yes,width=device-width">
     <link href="//fonts.googleapis.com/css?family=Roboto|Open+Sans:200,300,400,700,800,900&amp;subset=latin" rel="preload" as="font" />
     <style>
@@ -92,8 +92,26 @@ figcaption {
             background: #c9e4f9;
         }
         .page-preview-header > .close {
-            float: right;
-            margin-right: 10px;
+            float: left;
+            margin-right: 0px;
+        }
+        @media only screen and (orientation: portrait) {
+          .page-preview-header > .close {
+              float: left;
+              margin-left: 5px;
+              margin-top: 5px;
+          }
+          .page-preview-header > a {
+              display: inline-block;
+              margin-top: 3px;
+              padding: 2px;
+          }
+          figure {
+          	border: none;
+          	width: fit-content;
+          	padding: 0px;
+          	margin: auto;
+          }
         }
         .page-preview-body {
             height: calc(100% - 70px);
@@ -108,8 +126,7 @@ figcaption {
     </style>
 </head>
 <!-- CS and CV icons from flaticon.com -->
-    <body bgcolor="#689068">
-
+<body bgcolor="#689068">
 <div class="page-preview">
     <div class="page-preview-header">
         <a class="hidden-sm hidden-xs" href="aboutme.html" id="AboutMe" data-preview-size="100%"><img alt="About Me" src="images/avatar75.png">
@@ -124,7 +141,7 @@ figcaption {
         <a class="hidden-sm hidden-xs" href="https://www.linkedin.com/in/chaseleif/" id="LinkedIn" data-preview-size="1040px"><img alt="LinkedIn" src="images/LI-In-Bug.png">
         <figcaption>LinkedIn</figcaption>
         </a>
-        <a style="position:absolute;top:0px;left:0px;" href="index.html"><img alt="Computer Science" src="images/CSedico.png">
+        <a class="close" href="index.html"><img alt="Computer Science" src="images/CSedico.png">
         <figcaption>Main page</figcaption>
         </a>
     </div>
@@ -135,10 +152,6 @@ figcaption {
 		<img src="./images/hallo.jpg">
 		<figcaption>Chase Phelps</figcaption></figure>
 </div></h3>
-<!--
-<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
-<div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="chaseleif" data-version="v1" style="position:absolute;top:160px;left:0px;"><a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/chaseleif?trk=profile-badge">Chase LP</a></div>
--->
               
 </body>
 </div>

@@ -17,13 +17,6 @@ div.transparentbox {
   opacity: 0.8;
   filter: alpha(opacity=70);
 }
-figcaption {
-  background-color: #689068;
-  color: #000000;
-  padding: 2px;
-  text-align: center;
-  font-size: 80%;
-}
 </style>
 <!-- <div class="image"> -->
 <div class="transparentbox">
@@ -32,62 +25,100 @@ figcaption {
 	<title>Chase Phelps - My Research</title>
 	<meta name="description" content="Research">
 	<meta name="author" content="Chase Phelps">
-    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,user-scalable=yes,width=device-width">
-    <style>
-        .dialog-wrapper {
-            display: none !important;
-        }
-        .wrap,
-        #main {
-            height: 100vh;
-            margin: 0 !important;
-        }
-        iframe {
-            display: none;
-        }
-        html,
+  <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,user-scalable=yes,width=device-width">
+  <link href="//fonts.googleapis.com/css?family=Roboto|Open+Sans:200,300,400,700,800,900&amp;subset=latin" rel="preload" as="font" />
+  <style>
+      div.hcenter {
+        text-align: center;
+      }
+      figure {
+        border: 1px #a9a9a9 solid;
+        width: fit-content;
+        padding: 12px;
+        margin: auto;
+      }
+      figcaption {
+        background-color: #689068;
+        color: #000000;
+        padding: 2px;
+        text-align: center;
+        font-size: 80%;
+      }
+      .dialog-wrapper {
+          display: none !important;
+      }
+      .wrap,
+      #main {
+          height: 100vh;
+          margin: 0 !important;
+      }
+      iframe {
+        display: none;
+      }
+      html,
+      body {
+          overflow-y: hidden;
+          height: 100%;
+      }
+      .page-preview {
+          border-radius: 0;
+          height: 100%;
+      }
+      .page-preview-header {
+          background: #689068;
+          border: none;
+          height: 70px;
+          position: relative;
+          text-align: center;
+      }
+      .page-preview-header > a {
+          display: inline-block;
+          margin-top: 15px;
+          padding: 4px;
+      }
+      .page-preview-header > a:hover {
+          background: #e2f0fc;
+          text-decoration: none;
+      }
+      .page-preview-header > a.active {
+          background: #c9e4f9;
+      }
+      .page-preview-header > .close {
+          float: left;
+          margin-right: 0px;
+      }
+      @media only screen and (orientation: portrait) {
         body {
-            overflow-y: hidden;
             height: 100%;
         }
-        .page-preview {
-            border-radius: 0;
-            height: 100%;
-        }
-        .page-preview-header {
-            background: #689068;
-            border: none;
-            height: 70px;
-            position: relative;
-            text-align: center;
+        .page-preview-header > .close {
+            float: left;
+            margin-left: 5px;
+            margin-top: 5px;
         }
         .page-preview-header > a {
             display: inline-block;
-            margin-top: 15px;
-            padding: 4px;
+            margin-top: 3px;
+            padding: 2px;
         }
-        .page-preview-header > a:hover {
-            background: #e2f0fc;
-            text-decoration: none;
+        figure {
+         	border: none;
+         	width: fit-content;
+        	padding: 0px;
+        	margin: auto;
         }
-        .page-preview-header > a.active {
-            background: #c9e4f9;
-        }
-        .page-preview-header > .close {
-            float: right;
-            margin-right: 10px;
-        }
-        .page-preview-body {
-            height: calc(100% - 70px);
-            overflow: hidden;
-            text-align: center;
-        }
-        .page-preview-body iframe {
-            border: none;
-            display: inline-block;
-            height: 100%;
-        }
-    </style>
+      }
+      .page-preview-body {
+          height: calc(100% - 70px);
+          overflow: hidden;
+          text-align: center;
+      }
+      .page-preview-body iframe {
+          border: none;
+          display: inline-block;
+          height: 100%;
+      }
+  </style>
 </head>
 <body bgcolor="#689068">
 <div class="page-preview">
