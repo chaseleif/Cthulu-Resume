@@ -83,9 +83,11 @@ div.transparentbox {
       .page-preview-header > a.active {
           background: #c9e4f9;
       }
-      .page-preview-header > .close {
-          float: left;
+      .page-preview-header > .main {
           margin-right: 0px;
+      }
+      .page-preview-header > .linkedin {
+          margin-left: 0px;
       }
       .page-preview-body {
           height: calc(100% - 70px);
@@ -101,10 +103,15 @@ div.transparentbox {
         body {
             height: 100%;
         }
-        .page-preview-header > .close {
+        .page-preview-header > .main {
             float: left;
             margin-left: 5px;
             margin-top: 5px;
+        }
+        .page-preview-header > .linkedin {
+            float: right;
+            margin-left: 5px;
+            margin-top: 10px;
         }
         .page-preview-header > a {
             display: inline-block;
@@ -148,11 +155,11 @@ div.transparentbox {
         <a class="hidden-sm hidden-xs" href="courses.html" id="Courses" data-preview-size="1040px"><img alt="Courses" src="images/courses.png">
         <figcaption>Courses</figcaption>
         </a>
-        <a class="hidden-sm hidden-xs" href="https://www.linkedin.com/in/chaseleif/" id="LinkedIn" data-preview-size="1040px" target="_blank"><img alt="LinkedIn" src="images/LI-In-Bug.png">
-        <figcaption>LinkedIn</figcaption>
-        </a>
-        <a class="close" href="index.html"><img alt="Computer Science" src="images/CSedico.png">
+        <a class="main" href="index.html"><img alt="Computer Science" src="images/CSedico.png">
         <figcaption>Main page</figcaption>
+        </a>
+        <a class="linkedin" href="https://www.linkedin.com/in/chaseleif/" id="LinkedIn" data-preview-size="1040px" target="_blank"><img alt="LinkedIn" src="images/LI-In-Bug.png">
+        <figcaption>LinkedIn</figcaption>
         </a>
     </div>
     <div class="page-preview-body">

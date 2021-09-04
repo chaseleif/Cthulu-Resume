@@ -66,6 +66,7 @@ figcaption {
         }
         html,
         body {
+			overflow-y: hidden;
             height: 100%;
         }
         .page-preview {
@@ -92,21 +93,32 @@ figcaption {
             background: #c9e4f9;
         }
         .page-preview-header > .main {
-            float: left;
             margin-right: 0px;
         }
         .page-preview-header > .linkedin {
-            float: right;
             margin-left: 0px;
         }
+        .page-preview-body {
+            height: calc(100% - 70px);
+            overflow: hidden;
+            text-align: center;
+        }
+        .page-preview-body iframe {
+            border: none;
+            display: inline-block;
+            height: 100%;
+        }
         @media only screen and (orientation: portrait) {
+          body {
+              height: 100%;
+          }
           .page-preview-header > .main {
-              float: left;
-              margin-left: 0px;
+		      float: left;
+              margin-left: 5px;
               margin-top: 5px;
           }
           .page-preview-header > .linkedin {
-              float: right;
+	          float: right;
               margin-left: 5px;
               margin-top: 10px;
           }
@@ -121,24 +133,19 @@ figcaption {
           	padding: 0px;
           	margin: auto;
           }
-figcaption {
-  background-color: #689068;
-  color: #000000;
-  padding: 2px;
-            margin-bottom: 10px;
-  text-align: center;
-  font-size: 80%;
-}
-        }
-        .page-preview-body {
-            height: calc(100% - 70px);
-            overflow: hidden;
-            text-align: center;
-        }
-        .page-preview-body iframe {
-            border: none;
-            display: inline-block;
-            height: 100%;
+          .page-preview-body {
+              height: calc(100% - 70px);
+              width: 100%;
+              overflow: hidden;
+              text-align: center;
+          }
+          .page-preview-body iframe {
+              border: none;
+              display: inline-block;
+              margin-bottom: 10px;
+              height: 100%;
+              width: 100%;
+          }
         }
     </style>
 </head>
@@ -170,7 +177,6 @@ figcaption {
 	Hallo!<br><br>
 	<figure>
 		<img src="./images/hallo.jpg">
-		<figcaption>Chase Phelps</figcaption></figure>
 </div></h3>
 
 </body>
